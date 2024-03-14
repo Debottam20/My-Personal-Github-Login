@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    height: 100.05vh;
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+}
+
+.form-box {
+    /* border: solid red 2px; */
+    background-color: #dfdfdf;
+    height: 55vh;
+    width: 30vw;
+    color: red;
+    margin-top: 20vh;
+    box-shadow: 20px 10px 10px rgb(128, 0, 202);
+    overflow: auto;
+    border-radius: 19px;
+}
+
+h1 {
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 2.5rem;
+    animation: logo linear 10s infinite;
+}
+
+.input {
+    /* border: solid red 2px; */
+    border-radius: 19px;
+    padding: 19.55px;
+    display: flex;
+    justify-content: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    border: solid 2px blue;
+    border-radius: 19px;
+    padding: 3px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover {
+    background-color: bisque;
+    transition: all 0.5s ease;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    width: 50%;
+    font-size: 1em;
+    background-color: green;
+    color: yellow;
+    font-weight: bolder;
+}
+
+input[type="submit"]:hover {
+    background-color: blueviolet;
+    cursor: pointer;
+    transform: translateY(-2px);
+    transition: all 0.5s ease;
+}
+
+@keyframes logo {
+    0% {
+        color: #4078c0;
+    }
+
+    10% {
+        color: #6cc644;
+    }
+
+    20% {
+        color: red;
+    }
+
+    30% {
+        color: #bd2c00;
+    }
+
+    40% {
+        color:  #6e5494;
+    }
+
+    50% {
+        color: #333;
+    }
+    60% {
+        color: #6cc644;
+    }
+
+    70% {
+        color: yellowgreen;
+    }
+
+    80% {
+        color: blue;
+    }
+
+    90% {
+        color:  blueviolet;
+    }
+
+    100% {
+        color: mediumslateblue
+    }
+}
